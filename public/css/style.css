@@ -1,4 +1,4 @@
-h1, ul {
+h1, h2, ul {
   margin: 0;
   padding: 0;
 }
@@ -50,14 +50,23 @@ header > div > nav > ul > li > a:hover {
   color: aliceblue;
 }
 
-.container > h1 {
-  margin: 10px 0;
+.container > h2 {
   color: #8d4311;
-  margin-left: 30px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .img-fluid {
   width: 100%;
+}
+
+.ing-rounded {
+  border-radius: 8px;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .row {
@@ -69,10 +78,6 @@ header > div > nav > ul > li > a:hover {
 .col-4 {
   width: calc(100% / 3 - 30px);
   margin: 0px 15px 40px 15px;
-}
-
-.col-4 > p {
-  text-align: center;
 }
 
 .col-4 > p > a {

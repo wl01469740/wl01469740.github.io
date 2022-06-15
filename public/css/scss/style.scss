@@ -1,6 +1,6 @@
 $primary-color:rgb(141, 67, 17);
 
-h1,ul{
+h1,h2,ul{
     margin: 0;
     padding: 0;
 }
@@ -58,14 +58,24 @@ header>div>nav>ul>li>a:hover{
 //============================================================
 // 內容
 //============================================================
-.container>h1{
-    margin: 10px 0;
+.container>h2{
     color: $primary-color;
-    margin-left: 30px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
+// 圖片相關
 .img-fluid{
     width: 100%;
 }
+.ing-rounded{
+    border-radius: 8px;
+}
+// 文字相關
+.text-center{
+    text-align: center;
+}
+// 區塊相關
 .row{
     display: flex;
     justify-content: space-between;
@@ -75,9 +85,6 @@ header>div>nav>ul>li>a:hover{
     width: calc(100% / 3 - 30px);
     margin: 0px 15px 40px 15px;
     // 上右下左
-}
-.col-4>p{
-    text-align: center;
 }
 .col-4>p>a{
     text-decoration: none;
