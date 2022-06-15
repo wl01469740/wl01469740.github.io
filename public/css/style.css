@@ -18,6 +18,7 @@ body {
 }
 
 header > div > h1 {
+  margin-top: 10px;
   padding-left: 30px;
   color: #8d4311;
 }
@@ -50,7 +51,9 @@ header > div > nav > ul > li > a:hover {
 }
 
 .container > h1 {
+  margin: 10px 0;
   color: #8d4311;
+  margin-left: 30px;
 }
 
 .img-fluid {
@@ -64,7 +67,8 @@ header > div > nav > ul > li > a:hover {
 }
 
 .col-4 {
-  width: 33.3%;
+  width: calc(100% / 3 - 30px);
+  margin: 0px 15px 40px 15px;
 }
 
 .col-4 > p {

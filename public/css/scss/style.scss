@@ -24,6 +24,7 @@ header{
     // background-color: rgb(203, 249, 255);
 }
 header>div>h1{
+    margin-top: 10px;
     padding-left: 30px;
     color:$primary-color;
 }
@@ -58,7 +59,9 @@ header>div>nav>ul>li>a:hover{
 // 內容
 //============================================================
 .container>h1{
+    margin: 10px 0;
     color: $primary-color;
+    margin-left: 30px;
 }
 .img-fluid{
     width: 100%;
@@ -69,7 +72,9 @@ header>div>nav>ul>li>a:hover{
     flex-wrap: wrap;
 }
 .col-4{
-    width: 33.3%;
+    width: calc(100% / 3 - 30px);
+    margin: 0px 15px 40px 15px;
+    // 上右下左
 }
 .col-4>p{
     text-align: center;
