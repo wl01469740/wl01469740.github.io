@@ -1,4 +1,4 @@
-h1, h2, ul {
+h1, h2, ul, dd {
   margin: 0;
   padding: 0;
 }
@@ -22,7 +22,7 @@ header {
 }
 
 header > div > h1 {
-  margin-top: 10px;
+  padding-top: 10px;
   padding-left: 30px;
   color: #8d4311;
 }
@@ -33,7 +33,7 @@ header > div > nav > ul {
 }
 
 header > div > nav > ul > li {
-  margin: 30px;
+  margin: 25px;
 }
 
 header > div > nav > ul > li > a {
@@ -47,7 +47,8 @@ header > div > nav > ul > li > a {
   text-align: center;
   border: 1px solid black;
   box-sizing: border-box;
-  box-shadow: 0 3px;
+  box-shadow: 2px 2px;
+  font-weight: 800;
 }
 
 header > div > nav > ul > li > a:hover {
@@ -66,7 +67,7 @@ header > div > nav > ul > li > a:hover {
   width: 100%;
 }
 
-.ing-rounded {
+.img-rounded {
   border-radius: 8px;
 }
 
@@ -80,6 +81,11 @@ header > div > nav > ul > li > a:hover {
   flex-wrap: wrap;
 }
 
+.col-3 {
+  width: calc(100% / 4 - 30px);
+  margin: 0px 15px 40px 15px;
+}
+
 .col-4 {
   width: calc(100% / 3 - 30px);
   margin: 0px 15px 40px 15px;
@@ -87,4 +93,34 @@ header > div > nav > ul > li > a:hover {
 
 .col-4 > p > a {
   text-decoration: none;
+}
+
+.title a {
+  color: brown;
+  font-size: 1.3em;
+  font-weight: 800;
+}
+
+.date {
+  color: #8d4311;
+}
+
+footer {
+  background-color: #fbffc4;
+  padding: 40px 40px 0 40px;
+}
+
+dt {
+  font-size: 1.2em;
+  color: #8d4311;
+  margin-bottom: 10px;
+}
+
+dd {
+  margin-bottom: 5px;
+}
+
+dd > a {
+  text-decoration: none;
+  color: #292929;
 }
