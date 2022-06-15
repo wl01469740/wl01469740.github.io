@@ -17,3 +17,9 @@ body{
     background-color: rgb(80, 80, 80);
     color: brown;
 }
+.S1{
+    transform: rotate(30deg);
+}
+.S1:hover{
+    transform: rotate(60deg);
+}
