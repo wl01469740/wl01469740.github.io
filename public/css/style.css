@@ -7,19 +7,23 @@ ul {
   list-style-type: none;
 }
 
+.container {
+  margin: auto;
+  width: 80%;
+  max-width: 1140px;
+}
+
 body {
   margin: 0;
+}
+
+header {
+  background-color: #cbf9ff;
 }
 
 header > div > h1 {
   padding-left: 30px;
   color: #ff9100;
-}
-
-.container {
-  margin: auto;
-  width: 80%;
-  max-width: 1140px;
 }
 
 header > div > nav > ul {
