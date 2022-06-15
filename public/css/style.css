@@ -17,13 +17,9 @@ body {
   margin: 0;
 }
 
-header {
-  background-color: #cbf9ff;
-}
-
 header > div > h1 {
   padding-left: 30px;
-  color: #ff9100;
+  color: #8d4311;
 }
 
 header > div > nav > ul {
@@ -33,13 +29,48 @@ header > div > nav > ul {
 
 header > div > nav > ul > li {
   margin: 30px;
-  text-align: center;
 }
 
 header > div > nav > ul > li > a {
+  padding: 10px;
   text-decoration: none;
   line-height: 30px;
   color: #8d4311;
   font-size: 1.2em;
   letter-spacing: 2px;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+header > div > nav > ul > li > a:hover {
+  background-color: #7c93fa;
+  color: aliceblue;
+}
+
+.container > h1 {
+  color: #8d4311;
+}
+
+.img-fluid {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.col-4 {
+  width: 33.3%;
+}
+
+.col-4 > p {
+  text-align: center;
+}
+
+.col-4 > p > a {
+  text-decoration: none;
 }
