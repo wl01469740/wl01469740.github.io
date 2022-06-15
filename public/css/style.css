@@ -1,4 +1,41 @@
+h1, ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
 body {
   margin: 0;
-  background-color: #ff7e7e;
+}
+
+header > div > h1 {
+  padding-left: 30px;
+  color: #ff9100;
+}
+
+.container {
+  margin: auto;
+  width: 80%;
+  max-width: 1140px;
+}
+
+header > div > nav > ul {
+  display: flex;
+  justify-content: center;
+}
+
+header > div > nav > ul > li {
+  margin: 30px;
+  text-align: center;
+}
+
+header > div > nav > ul > li > a {
+  text-decoration: none;
+  line-height: 30px;
+  color: #8d4311;
+  font-size: 1.2em;
+  letter-spacing: 2px;
 }
