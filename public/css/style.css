@@ -147,7 +147,11 @@ footer a {
 }
 
 .S2 > .container > .leftbox {
-  width: 150px;
+  width: 20%;
+}
+
+.S2 > .container > .rightbox {
+  width: 80%;
 }
 
 .S2 > .container > .leftbox > dl > dt {
