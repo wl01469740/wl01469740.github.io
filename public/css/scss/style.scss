@@ -113,31 +113,37 @@ footer{
     background-color: rgb(251, 255, 196);
     padding: 40px 40px 0 40px;
 }
-dt{
+footer dt{
     font-size: 1.2em;
     color: $primary-color;
     margin-bottom: 10px;
 }
-dd{
+footer dd{
     margin-bottom: 5px;
 }
-dd>a{
+footer a{
     text-decoration: none;
     color: rgb(41, 41, 41);
 }
 // ============平面作品=====================
 // ============平面作品=====================
 // ============平面作品=====================
+section>.topbar{
+    margin-top:5px;
+    margin-bottom: 10px;
+}
 section>.topbar>a{
     text-decoration: none;
 }
-
-section>.container{
+.S2>.container{
     display: flex;
     justify-content: space-between;
 }
 section>.container>.leftbox{
     width: 150px;
+}
+section>.container>.leftbox>dl>dt{
+    margin-bottom: 20px;
 }
 section>.container>.leftbox>dl>dt>a{
     text-decoration: none;
@@ -145,7 +151,6 @@ section>.container>.leftbox>dl>dt>a{
     background-color: rgb(255, 215, 177);
     border-radius: 8px;
     padding: 5px;
-    margin-bottom: 10px;
 }
 section>.container>.leftbox>dl>dt>a:hover{
     background-color: rgb(63, 18, 1);
