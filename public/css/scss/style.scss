@@ -28,6 +28,9 @@ header>div>h1{
     padding-left: 30px;
     color:$primary-color;
 }
+header>div>h1>a{
+    text-decoration: none;
+}
 header>div>nav>ul{
     display: flex;
     justify-content: center;
@@ -120,4 +123,17 @@ dd{
 dd>a{
     text-decoration: none;
     color: rgb(41, 41, 41);
+}
+// ============平面作品=====================
+// ============平面作品=====================
+// ============平面作品=====================
+section>.container{
+    display: flex;
+    justify-content: space-between;
+}
+section>.container>.leftbox{
+    width: 150px;
+}
+section>h2{
+    position: relative;
 }
