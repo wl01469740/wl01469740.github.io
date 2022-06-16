@@ -132,13 +132,13 @@ footer a {
   color: #292929;
 }
 
-.S1 > .topbar {
-  margin-top: 5px;
-  margin-bottom: 10px;
+.S1 > .breadcrumb > a {
+  text-decoration: none;
+  color: black;
 }
 
-.S1 > .topbar > a {
-  text-decoration: none;
+.S1 > .breadcrumb > a:hover {
+  color: #923a00;
 }
 
 .S2 > .container {

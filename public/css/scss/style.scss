@@ -129,12 +129,12 @@ footer a{
 // ============平面作品=====================
 // ============平面作品=====================
 // ============平面作品=====================
-.S1>.topbar{
-    margin-top:5px;
-    margin-bottom: 10px;
-}
-.S1>.topbar>a{
+.S1>.breadcrumb>a{
     text-decoration: none;
+    color: black;
+}
+.S1>.breadcrumb>a:hover{
+    color: rgb(146, 58, 0);
 }
 .S2>.container{
     display: flex;
