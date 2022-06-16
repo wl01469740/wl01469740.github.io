@@ -178,6 +178,11 @@ footer a {
   color: #8d4311;
 }
 
+.S2 > .container > .rightbox > .row > .col-4 > a {
+  display: block;
+  overflow: hidden;
+}
+
 .S2 > .container > .rightbox img {
   transition: all 2s;
 }

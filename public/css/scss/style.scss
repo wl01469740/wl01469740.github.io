@@ -167,6 +167,10 @@ footer a{
     margin-bottom: 10px;
     color:$primary-color;
 }
+.S2>.container>.rightbox>.row>.col-4>a{
+    display: block;
+    overflow:hidden;
+}
 .S2>.container>.rightbox img{
     transition: all 2s;
 }
