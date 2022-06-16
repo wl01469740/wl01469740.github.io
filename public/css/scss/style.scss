@@ -100,7 +100,7 @@ header>div>nav>ul>li>a:hover{
     // 上右下左
 }
 .col-8{
-    width: calc(100% / 1.5 -30px);
+    width: calc(100% / 1.5 - 30px);
     margin: 0px 15px 40px 15px;
 }
 .col-4>p>a{
@@ -198,9 +198,30 @@ footer a{
 }
 .container>.row>.col-4{
     width: 20%;
+    margin: 0;
 }
+.btn-primary{
+    background-color: rgb(252, 167, 10);
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(70, 70, 70);
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 1px 1px 1px rgb(168, 168, 168);
+    text-decoration: none;
+    display: block;
+    border-radius: 8px;
+    color: rgb(247, 231, 208);
+    font-size: 1.3em;
+}
+.btn-primary:hover{
+    background-color: rgb(255, 204, 157);
+    color: rgb(255, 102, 0);
+}
+
 .container>.row>.col-8{
     width: 80%;
+    margin: 0;
 }
 .container>.row>.col-8>.row>.col-4>a{
     display: block;

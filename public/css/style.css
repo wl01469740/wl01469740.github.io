@@ -99,7 +99,7 @@ header > div > nav > ul > li > a:hover {
 }
 
 .col-8 {
-  width: calc(100% / 1.5 -30px);
+  width: calc(100% / 1.5 - 30px);
   margin: 0px 15px 40px 15px;
 }
 
@@ -216,10 +216,32 @@ footer a {
 
 .container > .row > .col-4 {
   width: 20%;
+  margin: 0;
+}
+
+.btn-primary {
+  background-color: #fca70a;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #464646;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 1px 1px 1px #a8a8a8;
+  text-decoration: none;
+  display: block;
+  border-radius: 8px;
+  color: #f7e7d0;
+  font-size: 1.3em;
+}
+
+.btn-primary:hover {
+  background-color: #ffcc9d;
+  color: #ff6600;
 }
 
 .container > .row > .col-8 {
   width: 80%;
+  margin: 0;
 }
 
 .container > .row > .col-8 > .row > .col-4 > a {
