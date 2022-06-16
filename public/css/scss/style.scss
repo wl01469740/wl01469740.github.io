@@ -99,8 +99,8 @@ header>div>nav>ul>li>a:hover{
     margin: 0px 15px 40px 15px;
     // 上右下左
 }
-.col-8{
-    width: calc(100% / 1.5 - 30px);
+.col-9{
+    width: calc(100% / 1.333333333 - 30px);
     margin: 0px 15px 40px 15px;
 }
 .col-4>p>a{
@@ -196,10 +196,6 @@ footer a{
 .container>.row>.breadcrumb>a:hover{
     color: blue;
 }
-.container>.row>.col-4{
-    width: 20%;
-    margin: 0;
-}
 .btn-primary{
     background-color: rgb(252, 167, 10);
     padding: 5px;
@@ -208,6 +204,7 @@ footer a{
     border-radius: 8px;
     text-align: center;
     box-shadow: 1px 1px 1px rgb(168, 168, 168);
+    box-sizing: border-box;
     text-decoration: none;
     display: block;
     border-radius: 8px;
@@ -218,12 +215,17 @@ footer a{
     background-color: rgb(255, 204, 157);
     color: rgb(255, 102, 0);
 }
-
-.container>.row>.col-8{
-    width: 80%;
-    margin: 0;
+.container>.row>.col-9>.row>.col-4{
+    border-radius: 8px;
+    overflow: hidden;
 }
-.container>.row>.col-8>.row>.col-4>a{
+.container>.row>.col-9>.row>.col-4>a{
     display: block;
     text-decoration: none;
+}
+.container>.row>.col-9>.row>.col-4>img{
+    transition: all 1s;
+}
+.container>.row>.col-9>.row>.col-4>img:hover{
+    transform: scale(1.3);
 }
