@@ -39,10 +39,13 @@ header > div > nav > ul {
 
 header > div > nav > ul > li {
   margin: 25px;
+  border-radius: 10px;
+  border: 1px solid black;
 }
 
 header > div > nav > ul > li > a {
-  padding: 10px;
+  display: block;
+  padding: 5px;
   text-decoration: none;
   line-height: 30px;
   color: #8d4311;
@@ -50,7 +53,6 @@ header > div > nav > ul > li > a {
   letter-spacing: 2px;
   border-radius: 10px;
   text-align: center;
-  border: 1px solid black;
   box-sizing: border-box;
   box-shadow: 2px 2px 3px #636363;
   font-weight: 800;
@@ -150,14 +152,19 @@ section > .container > .leftbox {
 
 section > .container > .leftbox > dl > dt {
   margin-bottom: 20px;
-}
-
-section > .container > .leftbox > dl > dt > a {
-  text-decoration: none;
   border: 1px solid #ff8800;
   background-color: #ffd7b1;
   border-radius: 8px;
+}
+
+section > .container > .leftbox > dl > dt > a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
   padding: 5px;
+  border-radius: 8px;
+  color: #5f4900;
+  box-shadow: 2px 2px 3px #4b4b4b;
 }
 
 section > .container > .leftbox > dl > dt > a:hover {

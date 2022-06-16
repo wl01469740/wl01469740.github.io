@@ -38,10 +38,12 @@ header>div>nav>ul{
 }
 header>div>nav>ul>li{
     margin:25px;
-    
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0); 
 }
 header>div>nav>ul>li>a{
-    padding: 10px;
+    display: block;
+    padding: 5px;
     text-decoration: none;
     line-height: 30px;
     color:$primary-color;
@@ -49,7 +51,6 @@ header>div>nav>ul>li>a{
     letter-spacing: 2px;
     border-radius: 10px;
     text-align: center;   
-    border: 1px solid rgb(0, 0, 0); 
     box-sizing: border-box;
     box-shadow: 2px 2px 3px rgb(99, 99, 99);
     font-weight: 800;
@@ -144,13 +145,18 @@ section>.container>.leftbox{
 }
 section>.container>.leftbox>dl>dt{
     margin-bottom: 20px;
-}
-section>.container>.leftbox>dl>dt>a{
-    text-decoration: none;
     border: 1px solid rgb(255, 136, 0);
     background-color: rgb(255, 215, 177);
     border-radius: 8px;
+}
+section>.container>.leftbox>dl>dt>a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
     padding: 5px;
+    border-radius: 8px;
+    color:rgb(95, 73, 0);
+    box-shadow: 2px 2px 3px rgb(75, 75, 75);
 }
 section>.container>.leftbox>dl>dt>a:hover{
     background-color: rgb(63, 18, 1);
