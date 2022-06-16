@@ -132,12 +132,12 @@ footer a {
   color: #292929;
 }
 
-section > .topbar {
+.S1 > .topbar {
   margin-top: 5px;
   margin-bottom: 10px;
 }
 
-section > .topbar > a {
+.S1 > .topbar > a {
   text-decoration: none;
 }
 
@@ -146,18 +146,18 @@ section > .topbar > a {
   justify-content: space-between;
 }
 
-section > .container > .leftbox {
+.S2 > .container > .leftbox {
   width: 150px;
 }
 
-section > .container > .leftbox > dl > dt {
+.S2 > .container > .leftbox > dl > dt {
   margin-bottom: 20px;
   border: 1px solid #ff8800;
   background-color: #ffd7b1;
   border-radius: 8px;
 }
 
-section > .container > .leftbox > dl > dt > a {
+.S2 > .container > .leftbox > dl > dt > a {
   display: block;
   text-decoration: none;
   text-align: center;
@@ -167,13 +167,21 @@ section > .container > .leftbox > dl > dt > a {
   box-shadow: 2px 2px 3px #4b4b4b;
 }
 
-section > .container > .leftbox > dl > dt > a:hover {
+.S2 > .container > .leftbox > dl > dt > a:hover {
   background-color: #3f1201;
   color: aliceblue;
 }
 
-section > .container > .rightbox > h2 {
+.S2 > .container > .rightbox > h2 {
   margin-left: 20px;
   margin-bottom: 10px;
   color: #8d4311;
+}
+
+.S2 > .container > .rightbox img {
+  transition: all 2s;
+}
+
+.S2 > .container > .rightbox img:hover {
+  transform: scale(1.5);
 }

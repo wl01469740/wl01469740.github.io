@@ -129,27 +129,27 @@ footer a{
 // ============平面作品=====================
 // ============平面作品=====================
 // ============平面作品=====================
-section>.topbar{
+.S1>.topbar{
     margin-top:5px;
     margin-bottom: 10px;
 }
-section>.topbar>a{
+.S1>.topbar>a{
     text-decoration: none;
 }
 .S2>.container{
     display: flex;
     justify-content: space-between;
 }
-section>.container>.leftbox{
+.S2>.container>.leftbox{
     width: 150px;
 }
-section>.container>.leftbox>dl>dt{
+.S2>.container>.leftbox>dl>dt{
     margin-bottom: 20px;
     border: 1px solid rgb(255, 136, 0);
     background-color: rgb(255, 215, 177);
     border-radius: 8px;
 }
-section>.container>.leftbox>dl>dt>a{
+.S2>.container>.leftbox>dl>dt>a{
     display: block;
     text-decoration: none;
     text-align: center;
@@ -158,12 +158,18 @@ section>.container>.leftbox>dl>dt>a{
     color:rgb(95, 73, 0);
     box-shadow: 2px 2px 3px rgb(75, 75, 75);
 }
-section>.container>.leftbox>dl>dt>a:hover{
+.S2>.container>.leftbox>dl>dt>a:hover{
     background-color: rgb(63, 18, 1);
     color:aliceblue;
 }
-section>.container>.rightbox>h2{
+.S2>.container>.rightbox>h2{
     margin-left: 20px;
     margin-bottom: 10px;
     color:$primary-color;
+}
+.S2>.container>.rightbox img{
+    transition: all 2s;
+}
+.S2>.container>.rightbox img:hover{
+    transform: scale(1.5);
 }
