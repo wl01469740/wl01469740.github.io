@@ -98,6 +98,11 @@ header > div > nav > ul > li > a:hover {
   margin: 0px 15px 40px 15px;
 }
 
+.col-8 {
+  width: calc(100% / 1.5 -30px);
+  margin: 0px 15px 40px 15px;
+}
+
 .col-4 > p > a {
   text-decoration: none;
 }
@@ -194,4 +199,32 @@ footer a {
 
 .S2 > .container > .rightbox img:hover {
   transform: scale(1.5);
+}
+
+.container > .row > .breadcrumb {
+  width: 100%;
+}
+
+.container > .row > .breadcrumb > a {
+  text-decoration: none;
+  color: #000;
+}
+
+.container > .row > .breadcrumb > a:hover {
+  color: blue;
+}
+
+.w-20 {
+  width: 20%;
+  background-color: #fff1a4;
+}
+
+.w-80 {
+  width: 80%;
+  background-color: #ff9900;
+}
+
+.container > .row > .col-9 > .row > .col-4 > a {
+  display: block;
+  text-decoration: none;
 }
