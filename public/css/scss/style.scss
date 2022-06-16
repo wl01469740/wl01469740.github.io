@@ -220,8 +220,11 @@ footer a{
     overflow: hidden;
 }
 .container>.row>.col-9>.row>.col-4>a{
+    margin: 0 ;
+    padding: 0;
     display: block;
     text-decoration: none;
+    background-color: rgb(252, 214, 112);
 }
 .container>.row>.col-9>.row>.col-4>img{
     transition: all 1s;
