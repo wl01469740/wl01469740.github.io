@@ -214,14 +214,12 @@ footer a {
   color: blue;
 }
 
-.w-20 {
+.container > .row > .col-4 {
   width: 20%;
-  background-color: #fff1a4;
 }
 
-.w-80 {
+.container > .row > .col-8 {
   width: 80%;
-  background-color: #ff9900;
 }
 
 .container > .row > .col-8 > .row > .col-4 > a {
