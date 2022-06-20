@@ -123,6 +123,9 @@ header>.container>nav>ul>li>a:hover{
         }
     }
 }
+.order-md-1{
+    order:-1;
+}
 .title a{
     color:brown;
     font-size: 1.3em;
@@ -157,10 +160,10 @@ footer a{
 .S1>.breadcrumb>a:hover{
     color: rgb(146, 58, 0);
 }
-.S2>.container{
-    display: flex;
-    justify-content: space-between;
-}
+ .S2>.container{
+     display: flex;
+     justify-content: space-between;
+ }
 .S2>.container>.leftbox{
     width: 20%;
 }
@@ -323,13 +326,5 @@ footer a{
 @for $i from 1 through 5 {
     .fz-#{$i}{
         font-size: $i * 1em;
-    }
-}
-@for $i from 1 through 12{
-    .col-#{$i}{
-        $num: calc(12 / #{$i});
-        width: calc(100% /  #{$num} - 30px);
-        margin: 0px 15px 40px 15px;
-    // 上右下左
     }
 }
