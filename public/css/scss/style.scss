@@ -7,6 +7,9 @@ h1,h2,ul,dd{
 ul{
     list-style-type: none;
 }
+a{
+    text-decoration: none;
+}
 .container{
     margin: auto;
     width: 80%;
@@ -29,7 +32,6 @@ header>.container h1{
     color:$primary-color;
 }
 header>.container h1>a{
-    text-decoration: none;
     color:$primary-color;
 }
 header>.container nav>ul{
@@ -39,7 +41,6 @@ header>.container nav>ul{
 header>.container nav>ul>li>a{
     display: block;
     padding: 5px;
-    text-decoration: none;
     line-height: 30px;
     color:$primary-color;
     font-size: 1.2em;
@@ -53,11 +54,51 @@ header>.container nav>ul>li>a:hover{
     color:aliceblue;
 }
 //超過768px以上執行-start
-@media (min-width:768px) {   
+@media (min-width:768px) {  
+    header>.container nav{
+        width: 100%;
+    }
     header>.container nav>ul>li{
         margin: 25px;
         border-radius: 10px;
         border: 1px solid rgb(0, 0, 0); 
+        position: relative;
+    }
+    header{
+        position: relative;
+    }
+    header h1{
+        position: absolute;
+        left: 50%;
+        // margin-left: -102px;
+        transform: translateX(-55%);
+        line-height:50px ;
+    }
+    header>.container nav>ul>li{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    header>.container nav>ul>li:nth-child(2){
+        margin-right: 220px;
+    }
+    .submenu{
+        position: absolute;
+        background-color: #fff;
+        width: 100%;
+        left: 0px;
+        top: 42px;
+        display: none;
+    }
+    header>.container nav>ul>li:hover .submenu{
+        display: block;
+    }
+    .submenu>li{
+        line-height:20px ;
+        padding: 5px;
+        text-align: center;
+    }
+    .submenu>li>a{
+        display: block;
     }
     header>.container nav>ul>li>a{
         padding: 5px;
@@ -146,14 +187,12 @@ footer dd{
     margin-bottom: 5px;
 }
 footer a{
-    text-decoration: none;
     color: rgb(41, 41, 41);
 }
 // ============平面作品=====================
 // ============平面作品=====================
 // ============平面作品=====================
 .S1>.breadcrumb>a{
-    text-decoration: none;
     color: black;
 }
 .S1>.breadcrumb>a:hover{
@@ -177,7 +216,6 @@ footer a{
 }
 .S2>.container>.leftbox>dl>dt>a{
     display: block;
-    text-decoration: none;
     text-align: center;
     padding: 5px;
     border-radius: 8px;
@@ -209,7 +247,6 @@ footer a{
     width: 100%;
 }
 .container>.row>.breadcrumb>a{
-    text-decoration: none;
     color: #000;
 }
 .container>.row>.breadcrumb>a:hover{
@@ -224,7 +261,6 @@ footer a{
     text-align: center;
     box-shadow: 1px 1px 1px rgb(168, 168, 168);
     box-sizing: border-box;
-    text-decoration: none;
     display: block;
     border-radius: 8px;
     color: rgb(247, 231, 208);
@@ -241,7 +277,6 @@ footer a{
     margin: 0 ;
     padding: 0;
     display: block;
-    text-decoration: none;
 }
 .container>.row>.col-9>.row>.col-4>a>img{
     transition: all 1s;
@@ -291,7 +326,6 @@ footer a{
         color: #000;
         line-height: 60px;
         text-align: center;
-        text-decoration: none;
     }
     header{
         position: relative;
@@ -301,18 +335,25 @@ footer a{
         // display: none;
         position: absolute;
         top: 60px;
-        left:0;
         background-color: rgb(254, 255, 218);
+        //蓋板設定
+        // position: fixed;
+        // top: 0px;
+        // height: 100vh;
+        // z-index: 999;
     }
-    // nav{
-    //     left: -100vw;
-    //     opacity: 0;
-    //     transition: all 1s;
-    // }
-    // .icon-menu:hover + nav{
-    //     left:0px;
+     nav{
+        left:0px;
+    // 這一行等二層選單做玩再打開
+    //  left: -100vw;
+    //  opacity: 0;
+        transition: all 1s;
+     }
+     //之後搭配js要改寫選取器寫法
+     .icon-menu:hover + nav{
+         left:0px;
     //     opacity: 1;
-    // }
+     }
     header>.container>.row>nav.active{
         display: block;
     }
@@ -322,6 +363,26 @@ footer a{
     header>.container>.row>nav>ul>li{
         width: 100%;
         border-bottom:1px solid $primary-color;
+        text-align: center;
+    }
+    header>.container nav>ul>li>a{
+        display: block;
+    }
+    .submenu{
+        background-color:rgb(255, 217, 168);
+        display: none;
+    }
+    //之後會改用js
+    header>.container nav>ul>li:hover .submenu{
+        display: block;
+    }
+    .submenu>li{
+        line-height: 60px;
+        border-bottom:1px solid #000;
+    }
+    .submenu>li>a{
+        color: #000;
+        display: block;
     }
     .overflow-hidden{
         overflow: hidden;

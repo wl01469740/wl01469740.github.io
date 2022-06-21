@@ -7,6 +7,10 @@ ul {
   list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   margin: auto;
   width: 80%;
@@ -28,7 +32,6 @@ header > .container h1 {
 }
 
 header > .container h1 > a {
-  text-decoration: none;
   color: #8d4311;
 }
 
@@ -40,7 +43,6 @@ header > .container nav > ul {
 header > .container nav > ul > li > a {
   display: block;
   padding: 5px;
-  text-decoration: none;
   line-height: 30px;
   color: #8d4311;
   font-size: 1.2em;
@@ -56,10 +58,58 @@ header > .container nav > ul > li > a:hover {
 }
 
 @media (min-width: 768px) {
+  header > .container nav {
+    width: 100%;
+  }
+
   header > .container nav > ul > li {
     margin: 25px;
     border-radius: 10px;
     border: 1px solid black;
+    position: relative;
+  }
+
+  header {
+    position: relative;
+  }
+
+  header h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-55%);
+    line-height: 50px;
+  }
+
+  header > .container nav > ul > li {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  header > .container nav > ul > li:nth-child(2) {
+    margin-right: 220px;
+  }
+
+  .submenu {
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    left: 0px;
+    top: 42px;
+    display: none;
+  }
+
+  header > .container nav > ul > li:hover .submenu {
+    display: block;
+  }
+
+  .submenu > li {
+    line-height: 20px;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .submenu > li > a {
+    display: block;
   }
 
   header > .container nav > ul > li > a {
@@ -340,12 +390,10 @@ footer dd {
 }
 
 footer a {
-  text-decoration: none;
   color: #292929;
 }
 
 .S1 > .breadcrumb > a {
-  text-decoration: none;
   color: black;
 }
 
@@ -375,7 +423,6 @@ footer a {
 
 .S2 > .container > .leftbox > dl > dt > a {
   display: block;
-  text-decoration: none;
   text-align: center;
   padding: 5px;
   border-radius: 8px;
@@ -413,7 +460,6 @@ footer a {
 }
 
 .container > .row > .breadcrumb > a {
-  text-decoration: none;
   color: #000;
 }
 
@@ -430,7 +476,6 @@ footer a {
   text-align: center;
   box-shadow: 1px 1px 1px #a8a8a8;
   box-sizing: border-box;
-  text-decoration: none;
   display: block;
   border-radius: 8px;
   color: #f7e7d0;
@@ -450,7 +495,6 @@ footer a {
   margin: 0;
   padding: 0;
   display: block;
-  text-decoration: none;
 }
 
 .container > .row > .col-9 > .row > .col-4 > a > img {
@@ -500,7 +544,6 @@ footer a {
     color: #000;
     line-height: 60px;
     text-align: center;
-    text-decoration: none;
   }
 
   header {
@@ -511,8 +554,16 @@ footer a {
     width: 100%;
     position: absolute;
     top: 60px;
-    left: 0;
     background-color: #feffda;
+  }
+
+  nav {
+    left: 0px;
+    transition: all 1s;
+  }
+
+  .icon-menu:hover + nav {
+    left: 0px;
   }
 
   header > .container > .row > nav.active {
@@ -526,6 +577,30 @@ footer a {
   header > .container > .row > nav > ul > li {
     width: 100%;
     border-bottom: 1px solid #8d4311;
+    text-align: center;
+  }
+
+  header > .container nav > ul > li > a {
+    display: block;
+  }
+
+  .submenu {
+    background-color: #ffd9a8;
+    display: none;
+  }
+
+  header > .container nav > ul > li:hover .submenu {
+    display: block;
+  }
+
+  .submenu > li {
+    line-height: 60px;
+    border-bottom: 1px solid #000;
+  }
+
+  .submenu > li > a {
+    color: #000;
+    display: block;
   }
 
   .overflow-hidden {
