@@ -23,20 +23,20 @@ body{
 header{
      background-color: rgb(203, 249, 255);
 }
-header>.container>h1{
+header>.container h1{
     padding-top: 10px;
     padding-left: 30px;
     color:$primary-color;
 }
-header>.container>h1>a{
+header>.container h1>a{
     text-decoration: none;
     color:$primary-color;
 }
-header>.container>nav>ul{
+header>.container nav>ul{
     display: flex;
     justify-content: center;
 }
-header>.container>nav>ul>li>a{
+header>.container nav>ul>li>a{
     display: block;
     padding: 5px;
     text-decoration: none;
@@ -48,18 +48,18 @@ header>.container>nav>ul>li>a{
     box-sizing: border-box;
     font-weight: 800;
 }
-header>.container>nav>ul>li>a:hover{
+header>.container nav>ul>li>a:hover{
     background-color: rgb(124, 147, 250);
     color:aliceblue;
 }
 //超過768px以上執行-start
 @media (min-width:768px) {   
-    header>.container>nav>ul>li{
+    header>.container nav>ul>li{
         margin: 25px;
         border-radius: 10px;
         border: 1px solid rgb(0, 0, 0); 
     }
-    header>.container>nav>ul>li>a{
+    header>.container nav>ul>li>a{
         padding: 5px;
         border-radius: 10px;
         box-shadow: 2px 2px 3px rgb(99, 99, 99);
@@ -92,7 +92,6 @@ header>.container>nav>ul>li>a:hover{
 // 區塊相關
 .row{
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
 }
 @for $i from 1 through 12{
@@ -160,7 +159,7 @@ footer a{
 .S1>.breadcrumb>a:hover{
     color: rgb(146, 58, 0);
 }
- .S2>.container{
+.S2>.container{
      display: flex;
      justify-content: space-between;
  }
@@ -255,10 +254,6 @@ footer a{
     display: block;
     margin-bottom:10px ;
 }
-.img-overlay{
-    overflow: hidden;
-    border-radius: 8px;
-  }
 .img-wrap img{
     vertical-align: top;
     transition: all 1s;
@@ -288,11 +283,8 @@ footer a{
 @media (max-width:767px) {
     h1{
         //width: 85%;
-        background-color: rgb(128, 246, 255);
-        float: left;
     }
     .icon-menu{
-        float: right;
         width: 15%;
         display: block;
         background-color:$primary-color;
@@ -301,22 +293,41 @@ footer a{
         text-align: center;
         text-decoration: none;
     }
-    header>.container>nav{
-        width: 100%;
-        float: left;
-        display: none;
+    header{
+        position: relative;
     }
-    header>.container>nav.active{
+    header>.container>.row>nav{
+        width: 100%;
+        // display: none;
+        position: absolute;
+        top: 60px;
+        left:0;
+        background-color: rgb(254, 255, 218);
+    }
+    // nav{
+    //     left: -100vw;
+    //     opacity: 0;
+    //     transition: all 1s;
+    // }
+    // .icon-menu:hover + nav{
+    //     left:0px;
+    //     opacity: 1;
+    // }
+    header>.container>.row>nav.active{
         display: block;
     }
-    header>.container>nav>ul{
+    header>.container>.row>nav>ul{
         display: block;
     }
-    header>.container>nav>ul>li{
+    header>.container>.row>nav>ul>li{
         width: 100%;
+        border-bottom:1px solid $primary-color;
     }
     .overflow-hidden{
         overflow: hidden;
+    }
+    .flex-space-between{
+        justify-content: space-between;
     }
 }//小於767px執行以下 end
 

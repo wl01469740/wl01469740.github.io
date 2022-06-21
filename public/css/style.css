@@ -21,23 +21,23 @@ header {
   background-color: #cbf9ff;
 }
 
-header > .container > h1 {
+header > .container h1 {
   padding-top: 10px;
   padding-left: 30px;
   color: #8d4311;
 }
 
-header > .container > h1 > a {
+header > .container h1 > a {
   text-decoration: none;
   color: #8d4311;
 }
 
-header > .container > nav > ul {
+header > .container nav > ul {
   display: flex;
   justify-content: center;
 }
 
-header > .container > nav > ul > li > a {
+header > .container nav > ul > li > a {
   display: block;
   padding: 5px;
   text-decoration: none;
@@ -50,19 +50,19 @@ header > .container > nav > ul > li > a {
   font-weight: 800;
 }
 
-header > .container > nav > ul > li > a:hover {
+header > .container nav > ul > li > a:hover {
   background-color: #7c93fa;
   color: aliceblue;
 }
 
 @media (min-width: 768px) {
-  header > .container > nav > ul > li {
+  header > .container nav > ul > li {
     margin: 25px;
     border-radius: 10px;
     border: 1px solid black;
   }
 
-  header > .container > nav > ul > li > a {
+  header > .container nav > ul > li > a {
     padding: 5px;
     border-radius: 10px;
     box-shadow: 2px 2px 3px #636363;
@@ -89,7 +89,6 @@ header > .container > nav > ul > li > a:hover {
 
 .row {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -468,11 +467,6 @@ footer a {
   margin-bottom: 10px;
 }
 
-.img-overlay {
-  overflow: hidden;
-  border-radius: 8px;
-}
-
 .img-wrap img {
   vertical-align: top;
   transition: all 1s;
@@ -499,13 +493,7 @@ footer a {
   }
 }
 @media (max-width: 767px) {
-  h1 {
-    background-color: #80f6ff;
-    float: left;
-  }
-
   .icon-menu {
-    float: right;
     width: 15%;
     display: block;
     background-color: #8d4311;
@@ -515,26 +503,37 @@ footer a {
     text-decoration: none;
   }
 
-  header > .container > nav {
-    width: 100%;
-    float: left;
-    display: none;
+  header {
+    position: relative;
   }
 
-  header > .container > nav.active {
+  header > .container > .row > nav {
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #feffda;
+  }
+
+  header > .container > .row > nav.active {
     display: block;
   }
 
-  header > .container > nav > ul {
+  header > .container > .row > nav > ul {
     display: block;
   }
 
-  header > .container > nav > ul > li {
+  header > .container > .row > nav > ul > li {
     width: 100%;
+    border-bottom: 1px solid #8d4311;
   }
 
   .overflow-hidden {
     overflow: hidden;
+  }
+
+  .flex-space-between {
+    justify-content: space-between;
   }
 }
 .fz-1 {
